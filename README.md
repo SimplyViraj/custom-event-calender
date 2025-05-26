@@ -15,7 +15,7 @@
 ### Steps to Run Locally
 1. Clone the repository:
    ```bash
-  (https://github.com/SimplyViraj/custom-event-calender)
+   cd https://github.com/SimplyViraj/custom-event-calender.git
    ```
 2. Navigate to the project directory:
    ```bash
