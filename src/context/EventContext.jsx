@@ -124,20 +124,7 @@ export function EventProvider({ children }) {
     updateEvent(eventId, updatedEvent);
   };
 
-  const searchEvents = (keyword) => {
-    const results = [];
-    Object.entries(events).forEach(([date, dateEvents]) => {
-      dateEvents.forEach(event => {
-        if (
-          event.title.toLowerCase().includes(keyword.toLowerCase()) ||
-          event.description?.toLowerCase().includes(keyword.toLowerCase())
-        ) {
-          results.push({ ...event, date });
-        }
-      });
-    });
-    return results;
-  };
+
 
   return (
     <EventContext.Provider value={{
@@ -146,7 +133,7 @@ export function EventProvider({ children }) {
       updateEvent,
       deleteEvent,
       moveEvent,
-      searchEvents
+
     }}>
       {children}
     </EventContext.Provider>

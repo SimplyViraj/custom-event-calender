@@ -5,8 +5,7 @@ import CalendarGrid from './CalendarGrid';
 import CalendarHeader from './CalendarHeader';
 import EventModal from './EventModal';
 import EventList from './EventList';
-import SearchBar from './SearchBar';
-import ExportButton from './ExportButton';
+
 
 function Calendar() {
   const [currentDate, setCurrentDate] = useState(new Date());
@@ -21,7 +20,7 @@ function Calendar() {
   };
 
   const handleEditEvent = (event) => {
-    setSelectedDate(new Date(event.date)); // Ensure the correct date is selected when editing
+    setSelectedDate(new Date(event.date)); 
     setEditingEvent(event);
     setIsModalOpen(true);
   };
@@ -51,8 +50,6 @@ function Calendar() {
     <DndProvider backend={HTML5Backend}>
       <div className="space-y-4">
         <div className="flex justify-between items-center">
-          <SearchBar />
-          <ExportButton />
         </div>
         <div className="flex gap-4">
           <div className="flex-1">
@@ -65,7 +62,7 @@ function Calendar() {
               currentDate={currentDate}
               selectedDate={selectedDate}
               onDateClick={handleDateClick}
-              onEditEvent={handleEditEvent} // Added prop for event editing
+              onEditEvent={handleEditEvent}
             />
           </div>
           <EventList 
