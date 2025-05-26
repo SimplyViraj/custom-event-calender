@@ -15,7 +15,7 @@
 ### Steps to Run Locally
 1. Clone the repository:
    ```bash
-   git clone https://github.com/anushkaps/dynamic-event-calendar.git
+  (https://github.com/SimplyViraj/custom-event-calender)
    ```
 2. Navigate to the project directory:
    ```bash
