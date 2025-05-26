@@ -1,5 +1,5 @@
 # Dynamic Event Calendar
-[LIVE DEMO](https://dynamic-event-calendar-beta.vercel.app/)
+[LIVE DEMO](https://virajs-flam-assessment.netlify.app/)
 
 ## Tech Stack Used
 - **React**: User interface and event handling
